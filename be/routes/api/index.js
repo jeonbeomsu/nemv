@@ -1,9 +1,12 @@
-var express = require('express');
-var router = express.Router();
+const router = require('express').Router()
+const createError = require('http-errors')
 
 
-router.get('/', function(req, res, next){
-    res.send('나는 api입니다.');
-});
 
-module.exports = router;
+router.use('/user', require('./user'))
+
+router.all('*',function(req,res,next){
+    next(createError(404,'404 eror!! 그런 API 없어!!'))
+})
+
+module.exports = router

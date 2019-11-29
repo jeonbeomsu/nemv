@@ -14,6 +14,11 @@ export default new Router({
       component: Home
     },
     {
+      path: '/user',
+      name: '사용자',
+      component: () => import('./views/User.vue')
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting
