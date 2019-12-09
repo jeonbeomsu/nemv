@@ -84,7 +84,7 @@ export default {
           icon: 'bubble_chart',
           title: 'inspire',
           to: {
-            path: '/'
+            path: '/user'
           }
         },
         {

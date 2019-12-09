@@ -5,6 +5,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+
 Vue.prototype.$apiRootPath = process.env.NODE_ENV !== 'production' ? 'http://localhost/api/' : '/api/'
 Vue.config.productionTip = false
 
