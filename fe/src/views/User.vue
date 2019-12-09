@@ -89,7 +89,8 @@ export default {
   },
   methods: {
     getReq () {
-      axios.get('/api/user', {
+      //axios.get('/api/user', {
+      axios.get('${this.$apiRootPath}user', {
         user: 'getMan'
       }).then((r) => {
         this.getMd = JSON.stringify(r.data)
@@ -98,7 +99,8 @@ export default {
       })
     },
     postReq () {
-      axios.post('/api/user', {
+      //axios.post('/api/user', {
+      axios.get('${this.$apiRootPath}user', {
         user: 'postMan'
       }).then((r) => {
         this.postMd = JSON.stringify(r.data)
@@ -107,7 +109,8 @@ export default {
       })
     },
     putReq () {
-      axios.put('/api/user', {
+      //axios.put('/api/user', {
+      axios.get('${this.$apiRootPath}user', {
         user: 'putMan'
       }).then((r) => {
         this.putMd = JSON.stringify(r.data)
@@ -116,7 +119,8 @@ export default {
       })
     },
     delReq () {
-      axios.delete('/api/user', {
+      //axios.delete('/api/user', {
+      axios.get('${this.$apiRootPath}user', {
         user: 'delMan'
       }).then((r) => {
         this.delMd = JSON.stringify(r.data)
