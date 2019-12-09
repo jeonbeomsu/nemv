@@ -89,7 +89,7 @@ export default {
   },
   methods: {
     getReq () {
-      axios.get('http://localhost:3000/api/user', {
+      axios.get('/api/user', {
         user: 'getMan'
       }).then((r) => {
         this.getMd = JSON.stringify(r.data)
@@ -98,7 +98,7 @@ export default {
       })
     },
     postReq () {
-      axios.post('http://localhost:3000/api/user', {
+      axios.post('/api/user', {
         user: 'postMan'
       }).then((r) => {
         this.postMd = JSON.stringify(r.data)
@@ -107,7 +107,7 @@ export default {
       })
     },
     putReq () {
-      axios.put('http://localhost:3000/api/user', {
+      axios.put('/api/user', {
         user: 'putMan'
       }).then((r) => {
         this.putMd = JSON.stringify(r.data)
@@ -116,7 +116,7 @@ export default {
       })
     },
     delReq () {
-      axios.delete('http://localhost:3000/api/user', {
+      axios.delete('/api/user', {
         user: 'delMan'
       }).then((r) => {
         this.delMd = JSON.stringify(r.data)
