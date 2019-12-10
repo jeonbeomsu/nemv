@@ -20,7 +20,7 @@ module.exports = {
   }],
 
   deploy : {
-    production : {
+    pr : {
       user : 'node',
       host : '212.83.163.1',
       ref  : 'origin/master',
