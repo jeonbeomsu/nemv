@@ -1,2 +1,3 @@
 # nemv3
-node express mongo vue
+
+NEMV TEST PROJECT~
